@@ -1,5 +1,14 @@
 // https://codepen.io/robinselmer/pen/mRjoXr
 
+/* Config */
+$color-bg: #111;
+$color-particle: rgb(218, 0, 0);
+$spacing: 2560px;
+$time-1: 60s;
+$time-2: 120s;
+$time-3: 180s;
+$time-4: 600s;
+
 /* Pauls awesome mixin */
 @function particles($max) {
   $val: 0px 0px $color-particle;
