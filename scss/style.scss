@@ -5,6 +5,7 @@
 @use "./components/buttons";
 @use "./components/mixins";
 @use "./components/typography";
+@use "./components/particles";
 
 // IMPORT SECTIONS
 @use "./sections/about";
@@ -12,3 +13,5 @@
 @use "./sections/footer";
 @use "./sections/navbar";
 @use "./sections/projects";
+
+
