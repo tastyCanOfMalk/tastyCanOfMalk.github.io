@@ -1,0 +1,25 @@
+.navbar {
+  padding: 2px 15px 0px 15px;
+  background-color: white;
+
+  &-brand {
+    padding-right: 1.5rem;
+    margin-top: -9px;
+  }
+
+  ul {
+    li {
+      padding: 0 0.7rem;
+      a {
+        &.nav-link {
+          font-family: "Open Sans", sans-serif;
+          text-transform: lowercase;
+          transition: all ease-in-out 150ms;
+        }
+        &:hover {
+          margin-top: -3px;
+        }
+      }
+    }
+  }
+}
