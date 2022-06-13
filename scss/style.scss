@@ -1,17 +1,18 @@
+@use "./reset";
 @use "./custom";
 
 // IMPORT COMPONENTS
-@use "./components/animations";
-@use "./components/buttons";
-@use "./components/mixins";
-@use "./components/typography";
-@use "./components/particles";
+// @use "./components/animations";
+// @use "./components/buttons";
+// @use "./components/mixins";
+// @use "./components/typography";
+// @use "./components/particles";
 
 // IMPORT SECTIONS
-@use "./sections/about";
-@use "./sections/contact";
-@use "./sections/footer";
 @use "./sections/navbar";
+@use "./sections/about";
 @use "./sections/projects";
+@use "./sections/contact";
+// @use "./sections/footer";
 
 

@@ -1,22 +1,49 @@
+@use '../custom' as *;
+
 .navbar {
   padding: 2px 15px 0px 15px;
-  background-color: white;
-
+  background-color: $Graphic-Design-3-hsla;
+  // background: linear-gradient(to right, white, $Graphic-Design-30-hsla);
+  background: linear-gradient(to top, $Roadside-4, $Roadside-3);
+  // border-bottom: 1px solid $Graphic-Design-3-hsla;
+  // background-color: white;
+  
   &-brand {
-    padding-right: 1.5rem;
-    margin-top: -9px;
+    margin: -6px 0 0 10px;
+    &:hover{
+      transition: all ease-in 150ms;
+      scale: 1.02;
+      // margin-top: -1px;
+    }
+
   }
 
+  &-collapse{
+      padding: 0 $navbar-brand-width 0 0;
+    }
+
   ul {
+    margin: auto;
+    
     li {
       padding: 0 0.7rem;
+      
+      &.nav-item{
+        justify-content: right;
+      }
+      
       a {
+        
         &.nav-link {
           font-family: "Open Sans", sans-serif;
           text-transform: lowercase;
-          transition: all ease-in-out 150ms;
+          transition: all ease-in 150ms;
+          color: $Graphic-Design-1-hsla;
+          
         }
+        
         &:hover {
+          color: $Graphic-Design-4-hsla;
           margin-top: -3px;
         }
       }
