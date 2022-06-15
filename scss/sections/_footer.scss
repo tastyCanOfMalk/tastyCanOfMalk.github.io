@@ -1,0 +1,19 @@
+@use '../custom' as *;
+
+#section_Footer{
+      // background-color: red;
+      background: linear-gradient(to top, $Roadside-3, $Roadside-4);
+
+    a{
+      color: $Roadside-1;
+      // padding-left: 2rem;
+      padding-right: 2rem;
+      // padding-bottom: 1rem;
+      // padding-top: 1rem;
+    }
+
+  i:hover{
+    transition: all ease-in-out 150ms;
+    margin-top: -2px;
+  }
+}

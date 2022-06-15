@@ -8,15 +8,17 @@
   <link rel="stylesheet" href="/assets/css/style.css" />
 
   <!-- GOOGLE FONTS -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Oswald&display=swap" rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Oswald&display=swap" rel="stylesheet"> -->
   <!-- /GOOGLE FONTS -->
 
   <title>Edward Yu</title>
 </head>
 
 <body>
+  <!-- TODO: Remove nested container-fluid > container, convert all to simple containers with padding if necessary-->
+
   <!--NAVBAR-->
   <!-- TODO: Navbar align right instead of center -->
   <nav class="navbar navbar-expand-md fixed-top navbar-light">
@@ -34,7 +36,12 @@
           <a class="nav-link" href="#section_Projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#section_Contact">Contact</a>
+          <a class="nav-link external-link"
+            href="https://drive.google.com/file/d/1IxfAGB7cDcF-q47Br6KbL0g9-UgMerDK/view?usp=sharing"
+            target="_blank">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link external-link" href="mailto:hello@ed-yu.com" target="_blank">Contact Me</a>
         </li>
       </ul>
     </div>
@@ -57,17 +64,18 @@
       </div>
 
       <div class="row">
-
-        <div class="col-md-8">
+        <div class="col">
+          <!-- TODO: Typography -->
           <h1>Hi, I'm <mark>Edward Yu</mark>.</h1>
           <h1>I'm a Data Analytics and Machine Learning enthusiast with Full Stack Software Development experience.
+            Currently pursuing a Masters in Data Analytics from Georgia Tech.
           </h1>
           <h1>I <i>love</i> a good data visualization.</h1>
         </div>
 
-        <!-- TODO: Add BS5 Carousel of interesting pictures to convey personality-->
-        <div class="col-md-4">
-          <img src="/img/self2.jpg" alt="A picture of myself at Dismaland" id="headshot2">
+        <!-- TODO: Add BS5 Carousel of interesting pictures to convey personality?-->
+        <div class="col">
+          <img src="/img/self2.jpg" alt="A picture of myself at Dismaland" id="headshot">
         </div>
 
       </div>
@@ -79,152 +87,142 @@
 
   <!-- PROJECTS -->
   <div class="container-fluid" id="section_Projects">
+
     <div class="container">
 
-      <h1>Isotope - filtering</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-4 d-flex">
 
-      <div class="button-group filters-button-group">
-        <button class="button is-checked" data-filter="*">show all</button>
-        <button class="button" data-filter=".metal">metal</button>
-        <button class="button" data-filter=".transition">transition</button>
-        <button class="button" data-filter=".alkali, .alkaline-earth">alkali and alkaline-earth</button>
-        <button class="button" data-filter=":not(.transition)">not transition</button>
-        <button class="button" data-filter=".metal:not(.transition)">metal but not transition</button>
-        <button class="button" data-filter="numberGreaterThan50">number > 50</button>
-        <button class="button" data-filter="ium">name ends with &ndash;ium</button>
+        <div class="col">
+          <div class="card h-100 shadow-sm p-2">
+            <img src="/img/card_bgs/webpage-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Personal Website</h5>
+              <p class="card-text">This website! A bootstrapped minimal showcase of projects.</p>
+              <p class="card-link"><a href="#" target="_blank">Github</a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">HTML, CSS, SASS, NPM</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm p-2">
+            <img src="/img/card_bgs/vintage-blue-robot-with-a-shadow-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Virtual Pet Game</h5>
+              <p class="card-text">A simple command-line Tomogatchi-like game built in Java. Try to keep the Robot Dogs
+                alive!</p>
+              <p class="card-link"><a href="#" target="_blank">Github</a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Java, TDD, OOP</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm p-2">
+            <img src="/img/card_bgs/foundry-filter-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Filter Defects Analysis</h5>
+              <p class="card-text">An financial comparison of specific defects found in the manufacturing process of
+                foundry filters over time.</p>
+              <p class="card-link"><a href="/projects/BESummary.html" target="_blank">RMD</a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">R, RMD, Plotly, Financial Analysis</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm p-2">
+            <img src="/img/card_bgs/gold-silver-bronze-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Customer Segmentation Analysis</h5>
+              <p class="card-text">An exercise in dividing customers into groups based on financial impact whereby
+                additional services could be rendered or withheld based on financial benefit.</p>
+              <p class="card-link"><a href="/projects/customerSegmentation.html" target="_blank">RMD</a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">R, RMD, Plotly, Segmentation Analysis</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm p-2">
+            <img src="/img/card_bgs/molten-metal-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Foundry Data Cleaning</h5>
+              <p class="card-text">A somewhat tedious cleaning task on data, dating back to 1995, relating to data
+                collected in a small foundry setting.</p>
+              <p class="card-link"><a href="/projects/historicalMAL.html" target="_blank">RMD</a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">R, RMD, Data Cleaning</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-100 shadow-sm p-2">
+            <img src="/img/card_bgs/macarons-on-display-at-bakery-2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Bakery Transaction Analysis</h5>
+              <p class="card-text">A primarily exploratory data analysis on nearly 6 months of bakery sales data with
+                ultimate suggestions to increase revenue. </p>
+              <p class="card-link"><a href="/projects/bakerySales.html" target="_blank">RMD</a></p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">R, RMD, ggPlot, EDA, Market Basket Analysis</small>
+            </div>
+          </div>
+        </div>
+
       </div>
-
-      <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 200 }'>
-        <div class="element-item transition metal " data-category="transition">
-          <h3 class="name">Mercury</h3>
-          <p class="symbol">Hg</p>
-          <p class="number">80</p>
-          <p class="weight">200.59</p>
-        </div>
-        <div class="element-item metalloid " data-category="metalloid">
-          <h3 class="name">Tellurium</h3>
-          <p class="symbol">Te</p>
-          <p class="number">52</p>
-          <p class="weight">127.6</p>
-        </div>
-        <div class="element-item post-transition metal " data-category="post-transition">
-          <h3 class="name">Bismuth</h3>
-          <p class="symbol">Bi</p>
-          <p class="number">83</p>
-          <p class="weight">208.980</p>
-        </div>
-        <div class="element-item post-transition metal " data-category="post-transition">
-          <h3 class="name">Lead</h3>
-          <p class="symbol">Pb</p>
-          <p class="number">82</p>
-          <p class="weight">207.2</p>
-        </div>
-        <div class="element-item transition metal " data-category="transition">
-          <h3 class="name">Gold</h3>
-          <p class="symbol">Au</p>
-          <p class="number">79</p>
-          <p class="weight">196.967</p>
-        </div>
-        <div class="element-item alkali metal " data-category="alkali">
-          <h3 class="name">Potassium</h3>
-          <p class="symbol">K</p>
-          <p class="number">19</p>
-          <p class="weight">39.0983</p>
-        </div>
-        <div class="element-item alkali metal " data-category="alkali">
-          <h3 class="name">Sodium</h3>
-          <p class="symbol">Na</p>
-          <p class="number">11</p>
-          <p class="weight">22.99</p>
-        </div>
-        <div class="element-item transition metal " data-category="transition">
-          <h3 class="name">Cadmium</h3>
-          <p class="symbol">Cd</p>
-          <p class="number">48</p>
-          <p class="weight">112.411</p>
-        </div>
-        <div class="element-item alkaline-earth metal " data-category="alkaline-earth">
-          <h3 class="name">Calcium</h3>
-          <p class="symbol">Ca</p>
-          <p class="number">20</p>
-          <p class="weight">40.078</p>
-        </div>
-        <div class="element-item transition metal " data-category="transition">
-          <h3 class="name">Rhenium</h3>
-          <p class="symbol">Re</p>
-          <p class="number">75</p>
-          <p class="weight">186.207</p>
-        </div>
-        <div class="element-item post-transition metal " data-category="post-transition">
-          <h3 class="name">Thallium</h3>
-          <p class="symbol">Tl</p>
-          <p class="number">81</p>
-          <p class="weight">204.383</p>
-        </div>
-        <div class="element-item metalloid " data-category="metalloid">
-          <h3 class="name">Antimony</h3>
-          <p class="symbol">Sb</p>
-          <p class="number">51</p>
-          <p class="weight">121.76</p>
-        </div>
-        <div class="element-item transition metal " data-category="transition">
-          <h3 class="name">Cobalt</h3>
-          <p class="symbol">Co</p>
-          <p class="number">27</p>
-          <p class="weight">58.933</p>
-        </div>
-        <div class="element-item lanthanoid metal inner-transition " data-category="lanthanoid">
-          <h3 class="name">Ytterbium</h3>
-          <p class="symbol">Yb</p>
-          <p class="number">70</p>
-          <p class="weight">173.054</p>
-        </div>
-        <div class="element-item noble-gas nonmetal " data-category="noble-gas">
-          <h3 class="name">Argon</h3>
-          <p class="symbol">Ar</p>
-          <p class="number">18</p>
-          <p class="weight">39.948</p>
-        </div>
-        <div class="element-item diatomic nonmetal " data-category="diatomic">
-          <h3 class="name">Nitrogen</h3>
-          <p class="symbol">N</p>
-          <p class="number">7</p>
-          <p class="weight">14.007</p>
-        </div>
-        <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-          <h3 class="name">Uranium</h3>
-          <p class="symbol">U</p>
-          <p class="number">92</p>
-          <p class="weight">238.029</p>
-        </div>
-        <div class="element-item actinoid metal inner-transition " data-category="actinoid">
-          <h3 class="name">Plutonium</h3>
-          <p class="symbol">Pu</p>
-          <p class="number">94</p>
-          <p class="weight">(244)</p>
-        </div>
-      </div>
-
-
-
-
 
     </div>
-  </div>
 
   </div>
   <!-- /PROJECTS -->
 
+  <!-- FOOTER -->
+  <footer class="container-fluid fixed-bottom" id="section_Footer">
+
+    <div class="d-flex justify-content-end">
+
+      <a href="https://www.linkedin.com/in/yuedward4/" target="_blank">
+        <i class="fa-brands fa-linkedin-in fa-2x"></i>
+      </a>
+      <a href="https://github.com/tastyCanOfMalk" target="_blank">
+        <i class="fa-brands fa-github-alt fa-2x"></i>
+      </a>
+      <a href="mailto:hello@ed-yu.com" target="_blank">
+        <i class="fa-solid fa-envelope fa-2x"></i>
+      </a>
+
+    </div>
+
+  </footer>
+  <!-- /FOOTER -->
 
 
-  <!-- CONTACT -->
-  <div class="container-fluid" id="section_Contact">
-  </div>
-  <!-- /CONTACT -->
 
   <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
   <script src="https://kit.fontawesome.com/ba275f91ac.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+  <!-- <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js"
+    integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async>
+  </script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+  </script>
+
+  <script src="js/isotope-docs.min.js?6"></script> -->
+
+  <!-- <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script> -->
 </body>
 
 </html>

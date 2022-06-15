@@ -1,7 +1,8 @@
-@use '../custom'as *;
+@use '../custom' as *;
+
 #section_About {
     height:auto;
-    padding-top: 3rem;
+    padding-top: 4rem;
     min-height: 100vh;
   // background-image: url(/img/bg5.jpg);
     width:100vw;
@@ -24,21 +25,6 @@
   margin: 10px;
   // border: 10px solid $Graphic-Design-2-hsla;
   border: 10px solid $Roadside-3;
-  border-radius: 500px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-}
-
-#headshot2 {
-  width: 400px;
-  height: 400px;
-  object-fit: cover;
-  margin: 10px;
-  // border: 10px solid $Graphic-Design-2-hsla;
-    border: 10px solid $Roadside-3;
   border-radius: 500px;
   -webkit-border-radius: 500px;
   -moz-border-radius: 500px;

@@ -2,12 +2,13 @@
 
 .navbar {
   padding: 2px 15px 0px 15px;
-  background-color: $Graphic-Design-3-hsla;
+  // background-color: $Graphic-Design-3-hsla;
   // background: linear-gradient(to right, white, $Graphic-Design-30-hsla);
   background: linear-gradient(to top, $Roadside-4, $Roadside-3);
-  // border-bottom: 1px solid $Graphic-Design-3-hsla;
+  border-bottom: 1px solid $Roadside-2;
   // background-color: white;
   
+
   &-brand {
     margin: -6px 0 0 10px;
     &:hover{
@@ -19,6 +20,7 @@
   }
 
   &-collapse{
+      margin: -6px 0 0 10px;
       padding: 0 $navbar-brand-width 0 0;
     }
 
@@ -33,19 +35,31 @@
       }
       
       a {
-        
         &.nav-link {
           font-family: "Open Sans", sans-serif;
           text-transform: lowercase;
-          transition: all ease-in 150ms;
+          transition: margin ease-in 150ms;
           color: $Graphic-Design-1-hsla;
+          
+          
           
         }
         
         &:hover {
           color: $Graphic-Design-4-hsla;
-          margin-top: -3px;
+          margin-top: -2px;
+          
         }
+        
+        &.external-link:hover{
+          background: url(/img/icons/arrow-up-right-from-square-solid.svg);
+          background-position: bottom right;
+          background-size: 15px 15px;
+          background-repeat: no-repeat;
+          background-color: rgba(0,0,0,.2);
+
+        }
+
       }
     }
   }

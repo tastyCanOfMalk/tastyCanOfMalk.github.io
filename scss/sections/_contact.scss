@@ -1,9 +1,27 @@
+@use '../custom' as *;
+
+
+
+
 #section_Contact {
-  height: auto;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
   min-height: 100vh;
   // background-image: url(/img/bg5.jpg);
   width: 100vw;
-  height: 100vh;
+  // height: 100vh;
+  height:auto;
   background-size: cover;
   background-color: green;
+
+
+
+  a{
+    color: $Roadside-1;
+  }
+
+  i:hover{
+    transition: all ease-in-out 150ms;
+    margin-top: -6px;
+  }
 }
