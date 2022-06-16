@@ -19,11 +19,11 @@
 }
 
 #headshot {
-  width: 400px;
-  height: 400px;
+  max-width: 500px;
+  height: 500px;
   object-fit: cover;
   margin: 10px;
-  // border: 10px solid $Graphic-Design-2-hsla;
+  border: 10px solid $Graphic-Design-2-hsla;
   border: 10px solid $Roadside-3;
   border-radius: 500px;
   -webkit-border-radius: 500px;

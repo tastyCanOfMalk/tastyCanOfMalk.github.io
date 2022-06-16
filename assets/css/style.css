@@ -10166,10 +10166,11 @@ textarea.form-control-lg {
 }
 
 #headshot {
-  width: 400px;
-  height: 400px;
+  max-width: 500px;
+  height: 500px;
   object-fit: cover;
   margin: 10px;
+  border: 10px solid hsl(28deg, 35%, 61%);
   border: 10px solid #FFFFFF;
   border-radius: 500px;
   -webkit-border-radius: 500px;
