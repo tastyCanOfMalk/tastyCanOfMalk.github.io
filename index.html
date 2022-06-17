@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Open+Sans:wght@300;400&family=Oswald&family=Roboto:wght@300;400&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Open+Sans:wght@300;400&family=Oswald&family=Roboto:wght@100;300;400&display=swap"
     rel="stylesheet">
   <!-- /GOOGLE FONTS -->
 
@@ -26,7 +26,7 @@
 
   <!--NAVBAR-->
   <!-- TODO: Navbar align right instead of center -->
-  <nav class="navbar navbar-expand-lg fixed-top navbar-light">
+  <nav class="navbar navbar-expand-sm fixed-top navbar-light">
     <a class="navbar-brand" href="index.html"><img src="/img/logo.png" alt="ed-yu.com"></a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +58,7 @@
   <div class="container-fluid" id=section_About>
 
     <div class="row">
-      <div class="bioLocation col blendedText">
+      <div class="col textEffect aboutLocation">
         <i class="fa-solid fa-location-dot fa-2x"></i>
         <h2 class="d-inline">Columbus, Ohio</h2>
       </div>
@@ -66,25 +66,50 @@
 
     <div class="row">
 
-      <div class="col blendedText bioInfo">
+      <div class="col textEffect">
 
-        <h1 class="display-3">Hello, I'm <mark>Edward Yu</mark>.</h1>
+        <h1 class="display-3 aboutGreeting">Hello, I'm <mark id="fade3">Edward Yu</mark>.</h1>
 
-        <div class="container paragraphBox">
-          <h2 class="bioInfoParagraph">
-            I'm a
-            <u>Data Analytics</u>
-            and
-            <u>Machine Learning</u>
-            enthusiast with
-            <u>Full Stack Software Development</u>
-            experience, currently pursuing a
-            <b>Masters in Data Analytics</b> from Georgia Tech.
-            </h1>
-            <h1 class="bioLove">I
-              <i>love</i>
-              a good data visualization.</h1>
-        </div>
+
+        <h2 class="aboutInfo">
+          <span>Currently </span>
+          <span>enrolled </span>
+          <span>at </span>
+          <span>Georgia Tech</span>
+          <span>,</span>
+          <span>specializing </span>
+          <span>in </span>
+          <span class="aboutEmphasize">Data Analytics</span>
+          <span>.</span>
+          <br>
+          <span>A</span>
+          <span>curious</span>
+          <span class="aboutEmphasize">Full Stack Software Engineer</span>
+          <span>with </span>
+          <span>a</span>
+          <span class="aboutEmphasize">Machine Learning</span>
+          <span>habit .</span>
+
+          <!-- <span class="aboutLove" id="aboutLove">I <i class="fa-solid fa-heart"></i> a good data
+            visualization.</span> -->
+          <span class="aboutLove" id="aboutLove">I <i>love</i> a good data visualization.</span>
+
+        </h2>
+        <!-- <h2 class="aboutInfo">
+          I'm a <span>Data Analytics</span> and <span>Machine Learning</span> enthusiast with <span>Full Stack Software
+            Development</span> experience, currently pursuing a <span>Masters in Data Analytics</span> from Georgia Tech.
+        </h2> -->
+
+        <!-- <h1 class="aboutLove" id="fade9">
+          <span>I <i>love</i> a good data visualization.</span>
+        </h1> -->
+        <!-- <h2 class="aboutLove"> -->
+
+        <!-- </h1> -->
+
+
+
+
       </div>
 
     </div>
@@ -119,7 +144,8 @@
             <h5 class="card-title">Virtual Pet Game</h5>
             <p class="card-text">A simple command-line Tomogatchi-like game built in Java. Try to keep the Robot Dogs
               alive!</p>
-            <p class="card-link"><a href="#" target="_blank">Github</a></p>
+            <p class="card-link"><a href="https://github.com/tastyCanOfMalk/virtual-pet-tastyCanOfMalk"
+                target="_blank">Github</a></p>
           </div>
           <div class="card-footer">
             <small class="text-muted">Java, TDD, OOP</small>

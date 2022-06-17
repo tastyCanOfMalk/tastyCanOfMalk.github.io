@@ -10114,29 +10114,135 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-weight: normal;
+  animation: type 4s steps(60, end);
 }
 h1 mark, h2 mark, h3 mark, h4 mark, h5 mark, h6 mark {
   background-color: pink;
   line-height: 15rem;
-  margin: 1rem 1rem 2rem 0;
+  margin: 1rem 1rem 1rem 0;
 }
 
-.bioLocation h2 {
+.aboutLocation h2 {
   font-family: "Oswald", sans-serif;
   font-weight: normal;
 }
 
-.bioInfo h2 {
+.aboutInfo {
   font-family: "Roboto", sans-serif;
   font-weight: normal;
 }
+.aboutInfo h2 h3 {
+  max-width: 40ch;
+  text-align: center;
+  transform: scale(0.94);
+  animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
 
+.aboutLove {
+  font-weight: normal;
+}
+
+h2 span {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  display: inline-block;
+  opacity: 0;
+  filter: blur(4px);
+}
+
+.aboutEmphasize {
+  font-weight: normal;
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+span:nth-child(1) {
+  animation: fade-in 0.8s 2.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 2.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 2.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 3.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 3.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 4.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 4.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(9) {
+  animation: fade-in 0.8s 4.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(10) {
+  animation: fade-in 0.8s 5.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(11) {
+  animation: fade-in 0.8s 5.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(12) {
+  animation: fade-in 0.8s 5.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(13) {
+  animation: fade-in 1.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(14) {
+  animation: fade-in 0.8s 6.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(15) {
+  animation: fade-in 0.8s 7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(16) {
+  animation: fade-in 1.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(17) {
+  animation: fade-in 0.8s 7.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(18) {
+  animation: fade-in 1.8s 10s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
 #fade1 {
-  -webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 15s; /* Firefox < 16 */
-  -ms-animation: fadein 15s; /* Internet Explorer */
-  -o-animation: fadein 15s; /* Opera < 12.1 */
-  animation: fadein 15s;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
 #fade2 {
@@ -10252,6 +10358,7 @@ h1 mark, h2 mark, h3 mark, h4 mark, h5 mark, h6 mark {
   scale: 1.02;
 }
 .navbar-collapse {
+  padding-right: 1rem;
   text-align: right;
 }
 .navbar ul {
@@ -10297,19 +10404,25 @@ h1 mark, h2 mark, h3 mark, h4 mark, h5 mark, h6 mark {
 #section_About .d-inline {
   padding-left: 1rem;
 }
-#section_About .blendedText {
+#section_About .textEffect {
   color: #FFFFFF;
   filter: drop-shadow(0.05em 0.05em orange);
 }
-#section_About .bioLocation {
+#section_About .aboutLocation {
   margin: 1rem 0 1rem 0;
 }
-#section_About .bioInfo {
+#section_About .aboutGreeting {
   margin: 0 3rem 0 2rem;
+  letter-spacing: 0.2rem;
 }
-#section_About .bioInfoParagraph {
-  margin: 0 3rem 0 2rem;
+#section_About .aboutInfo {
+  margin: 0 3rem 0 3rem;
   padding-bottom: 1rem;
+}
+#section_About #aboutLove {
+  text-align: right;
+  padding: 4rem 2rem 0 2rem;
+  width: 100%;
 }
 
 #section_Projects {
