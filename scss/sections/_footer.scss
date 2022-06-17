@@ -1,16 +1,11 @@
 @use '../custom' as *;
 
 #section_Footer{
-      // background-color: red;
-      // background: linear-gradient(to top, $Roadside-3, $Roadside-4);
       opacity: .8;
 
     a{
       color: $Roadside-1;
-      // padding-left: 2rem;
       padding-right: 2rem;
-      // padding-bottom: 1rem;
-      // padding-top: 1rem;
     }
 
   i:hover{
@@ -18,12 +13,9 @@
     margin-top: -2px;
   }
 
-.blendedFooter {
-  color: $Roadside-3;
-  mix-blend-mode: hue;
-  filter: drop-shadow(0.05em 0.05em $Roadside-4);
-
-}
-
-
+  .blendedFooter {
+    color: $Roadside-3;
+    mix-blend-mode: hue;
+    filter: drop-shadow(0.05em 0.05em $Roadside-4);
+  }
 }

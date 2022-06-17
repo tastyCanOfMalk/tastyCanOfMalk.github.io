@@ -1,18 +1,14 @@
 @use '../custom' as *;
 
 #section_Projects {
-
-  padding-top: 4rem;
-  padding-bottom: 3rem;
+  padding: 4rem 2rem 3rem 2rem;
   min-height: 100vh;
   width: 100vw;
   height:auto;
   background-size: cover;
   background-color: $Roadside-4;
-  // height: 100vh;
 
   .card-footer{
     background-color: $Roadside-3;
   }
-  
 }  
