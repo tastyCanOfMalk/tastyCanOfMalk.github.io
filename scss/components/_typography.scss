@@ -1,9 +1,10 @@
 @use '../custom' as *;
 
 // Font Variables
-$oswald-font: 'Oswald', sans-serif;
 $arvo-font: 'Arvo', serif;   
+$oswald-font: 'Oswald', sans-serif;
 $openSans-font: 'Open Sans', sans-serif;
+$roboto-font: 'Roboto', sans-serif;
 
 // Styles
 body {
@@ -11,29 +12,33 @@ body {
   font-weight: normal;
 }
 
-
-h1, h3, h4, h5, h6 {
-  font-family: $arvo-font;
-  // display: inline;
+h1, h2, h3, h4, h5, h6 {
   font-family: $oswald-font;
   font-weight: normal;
-  animation: type 4s steps(60, end); 
+  // display: inline;
+  // animation: type 4s steps(60, end); 
   mark{
-    background-color: pink;
+    background-color: $mark-color;
     line-height: 15rem;
     margin: 1rem 1rem 2rem 0;
   }
-  
 }
 
-h2{
-  font-family: $oswald-font;
-  // font-family: $arvo-font;
-  // display: inline;
+.bioLocation{
+  h2{
+    font-family: $oswald-font;
+    font-weight: normal;
+    
+  }
 
 }
 
-
+.bioInfo{
+  h2{
+    font-family: $roboto-font;
+    font-weight: normal;
+  }
+}
 #fade1{
   -webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
      -moz-animation: fadein 15s; /* Firefox < 16 */

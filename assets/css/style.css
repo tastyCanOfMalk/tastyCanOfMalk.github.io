@@ -10111,20 +10111,24 @@ body {
   font-weight: normal;
 }
 
-h1, h3, h4, h5, h6 {
-  font-family: "Arvo", serif;
+h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", sans-serif;
   font-weight: normal;
-  animation: type 4s steps(60, end);
 }
-h1 mark, h3 mark, h4 mark, h5 mark, h6 mark {
+h1 mark, h2 mark, h3 mark, h4 mark, h5 mark, h6 mark {
   background-color: pink;
   line-height: 15rem;
   margin: 1rem 1rem 2rem 0;
 }
 
-h2 {
+.bioLocation h2 {
   font-family: "Oswald", sans-serif;
+  font-weight: normal;
+}
+
+.bioInfo h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
 }
 
 #fade1 {
@@ -10292,14 +10296,17 @@ h2 {
 }
 #section_About .blendedText {
   color: #FFFFFF;
-  mix-blend-mode: difference;
   filter: drop-shadow(0.05em 0.05em orange);
 }
 #section_About .bioLocation {
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 0 1rem 0;
 }
 #section_About .bioInfo {
   margin: 0 3rem 0 2rem;
+}
+#section_About .bioInfoParagraph {
+  margin: 0 3rem 0 2rem;
+  padding-bottom: 1rem;
 }
 
 #section_Projects {

@@ -1,40 +1,53 @@
 @use '../custom' as *;
 
 #section_About {
-    height:auto;
-    padding: 4rem 2rem 0 2rem;
-    min-height: 100vh;
-    width:100vw;
-    height: 100vh;
-    background-size: cover;
-    background-color: $Roadside-4;
+  height:auto;
+  padding: 4rem 2rem 0 2rem;
+  min-height: 100vh;
+  width:100vw;
+  height: 100vh;
+  background-size: cover;
+  background-color: $Roadside-4;
 
-    background-image: linear-gradient(to bottom, $Graphic-Design-50-hsla, $Graphic-Design-10-hsla), url(/img/self3.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    
-    .row{
-      padding-bottom: 1rem;
-    }
-    .d-inline{
-      padding-left: 1rem;
-    }
+  background-image: linear-gradient(to bottom, $Graphic-Design-50-hsla, $Graphic-Design-10-hsla), url(/img/self3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  
+  .row{
+    padding-bottom: 1rem;
+  }
+  .d-inline{
+    padding-left: 1rem;
+  }
 
-    .blendedText {
-      color: $Roadside-3;
-      mix-blend-mode: difference;
-      filter: drop-shadow(0.05em 0.05em orange);
-}
+  .blendedText {
+    color: $Roadside-3;
+    // mix-blend-mode: difference;
+    filter: drop-shadow(0.05em 0.05em $dropshadow-color);
+  }
 
   .bioLocation{
-    margin: 1rem 0 2rem 0;
+    margin: 1rem 0 1rem 0;
   }
 
   .bioInfo{
     margin: 0 3rem 0 2rem;
+    // mix-blend-mode:normal;
+    // opacity: .5;
+    // .paragraphBox{
+    //   mix-blend-mode:normal;
+    //   background-color: white;
+    //   opacity: .4;
+    //   color: black;
+    // }
+  }
+  .bioInfoParagraph{
+    margin: 0 3rem 0 2rem;
+    padding-bottom: 1rem;
   }
 
 }
+
 
 // #headshot {
 //   max-width: 400px;

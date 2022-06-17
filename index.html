@@ -13,7 +13,9 @@
   <!-- <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Oswald&display=swap" rel="stylesheet"> -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Oswald&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Open+Sans:wght@300;400&family=Oswald&family=Roboto:wght@300;400&display=swap"
+    rel="stylesheet">
   <!-- /GOOGLE FONTS -->
 
   <title>Edward Yu</title>
@@ -68,21 +70,21 @@
 
         <h1 class="display-3">Hello, I'm <mark>Edward Yu</mark>.</h1>
 
-
-        <h2 class="">I'm a
-          <u>Data Analytics</u>
-          and
-          <u>Machine Learning</u>
-          enthusiast with
-          <u>Full Stack Software Development</u>
-          experience, currently pursuing a
-          <b>Masters in Data Analytics</b> from Georgia Tech.
-          </h1>
-          <h1 class="test">I
-            <i>love</i>
-            a good data visualization.</h1>
-
-
+        <div class="container paragraphBox">
+          <h2 class="bioInfoParagraph">
+            I'm a
+            <u>Data Analytics</u>
+            and
+            <u>Machine Learning</u>
+            enthusiast with
+            <u>Full Stack Software Development</u>
+            experience, currently pursuing a
+            <b>Masters in Data Analytics</b> from Georgia Tech.
+            </h1>
+            <h1 class="test">I
+              <i>love</i>
+              a good data visualization.</h1>
+        </div>
       </div>
 
     </div>
@@ -93,153 +95,148 @@
   <!-- PROJECTS -->
   <div class="container-fluid" id="section_Projects">
 
-    <div class="container">
+    <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2  g-4 d-flex">
 
-      <div class="row row-cols-1 row-cols-md-3 g-4 d-flex">
-
-        <div class="col">
-          <div class="card h-100 shadow-sm p-2">
-            <img src="/img/card_bgs/webpage-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Personal Website</h5>
-              <p class="card-text">This website! A bootstrapped minimal showcase of projects.</p>
-              <p class="card-link"><a href="#" target="_blank">Github</a></p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">HTML, CSS, SASS, NPM</small>
-            </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm p-2">
+          <img src="/img/card_bgs/webpage-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Personal Website</h5>
+            <p class="card-text">This website! A bootstrapped minimal showcase of projects.</p>
+            <p class="card-link"><a href="#" target="_blank">Github</a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">HTML, CSS, SASS, NPM</small>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 shadow-sm p-2">
-            <img src="/img/card_bgs/vintage-blue-robot-with-a-shadow-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Virtual Pet Game</h5>
-              <p class="card-text">A simple command-line Tomogatchi-like game built in Java. Try to keep the Robot Dogs
-                alive!</p>
-              <p class="card-link"><a href="#" target="_blank">Github</a></p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Java, TDD, OOP</small>
-            </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm p-2">
+          <img src="/img/card_bgs/vintage-blue-robot-with-a-shadow-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Virtual Pet Game</h5>
+            <p class="card-text">A simple command-line Tomogatchi-like game built in Java. Try to keep the Robot Dogs
+              alive!</p>
+            <p class="card-link"><a href="#" target="_blank">Github</a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Java, TDD, OOP</small>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 shadow-sm p-2">
-            <img src="/img/card_bgs/nsfw.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">NSFW Community Detection</h5>
-              <p class="card-text">A collaborative project seeking to detect changes in naturally emergent communities
-                within a popular adult video site. Implemented in D3 and a (very slow) RMD file.</p>
-              <p class="card-link"><a href="/projects/Leiden_D3.html" target="_blank">D3</a> - Leiden
-                <br>
-                <a href="/projects/Leiden_RMD.html" target="_blank">RMD</a> - Leiden
-                <br>
-                <a href="/projects/Louvain_RMD.html" target="_blank">RMD</a> - Louvain
-              </p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">D3, Leiden, Louvain, Community Detection</small>
-            </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm p-2">
+          <img src="/img/card_bgs/nsfw.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">NSFW Community Detection</h5>
+            <p class="card-text">A collaborative project seeking to detect changes in naturally emergent communities
+              within a popular adult video site. Implemented in D3 and a (very slow) RMD file.</p>
+            <p class="card-link"><a href="/projects/Leiden_D3.html" target="_blank">D3</a> - Leiden
+              <br>
+              <a href="/projects/Leiden_RMD.html" target="_blank">RMD</a> - Leiden
+              <br>
+              <a href="/projects/Louvain_RMD.html" target="_blank">RMD</a> - Louvain
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">D3, Leiden, Louvain, Community Detection</small>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 shadow-sm p-2">
-            <img src="/img/card_bgs/boardGame_nodes-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Force-directed Graph</h5>
-              <p class="card-text">An interactive node/edge plot built using D3.js, using toy data to experiment with
-                node behaviours such as dragging, pinning, click-events, etc.</p>
-              <p class="card-link"><a href="/projects/boardGameNodes.html" target="_blank">Project</a></p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">D3, Network Graph</small>
-            </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm p-2">
+          <img src="/img/card_bgs/boardGame_nodes-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Force-directed Graph</h5>
+            <p class="card-text">An interactive node/edge plot built using D3.js, using toy data to experiment with
+              node behaviours such as dragging, pinning, click-events, etc.</p>
+            <p class="card-link"><a href="/projects/boardGameNodes.html" target="_blank">Project</a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">D3, Network Graph</small>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 shadow-sm p-2">
-            <img src="/img/card_bgs/choropleth_boardgames-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Boardgame Popularity by Country</h5>
-              <p class="card-text">An interactive Choropleth map built using D3.js, mapping average boardgame ratings by
-                country.</p>
-              <p class="card-link"><a href="/projects/boardGameChoropleth.html" target="_blank">Project</a></p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">D3, JSON, Choropleth</small>
-            </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm p-2">
+          <img src="/img/card_bgs/choropleth_boardgames-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Boardgame Popularity by Country</h5>
+            <p class="card-text">An interactive Choropleth map built using D3.js, mapping average boardgame ratings by
+              country.</p>
+            <p class="card-link"><a href="/projects/boardGameChoropleth.html" target="_blank">Project</a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">D3, JSON, Choropleth</small>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 shadow-sm p-2">
-            <img src="/img/card_bgs/foundry-filter-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Filter Defects Analysis</h5>
-              <p class="card-text">An financial comparison of specific defects found in the manufacturing process of
-                foundry filters over time.</p>
-              <p class="card-link"><a href="/projects/BESummary.html" target="_blank">RMD</a></p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">R, RMD, Plotly, Financial Analysis</small>
-            </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm p-2">
+          <img src="/img/card_bgs/foundry-filter-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Filter Defects Analysis</h5>
+            <p class="card-text">An financial comparison of specific defects found in the manufacturing process of
+              foundry filters over time.</p>
+            <p class="card-link"><a href="/projects/BESummary.html" target="_blank">RMD</a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">R, RMD, Plotly, Financial Analysis</small>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 shadow-sm p-2">
-            <img src="/img/card_bgs/gold-silver-bronze-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Customer Segmentation Analysis</h5>
-              <p class="card-text">An exercise in dividing customers into groups based on financial impact whereby
-                additional services could be rendered or withheld based on financial benefit.</p>
-              <p class="card-link"><a href="/projects/customerSegmentation.html" target="_blank">RMD</a></p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">R, RMD, Plotly, Segmentation Analysis</small>
-            </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm p-2">
+          <img src="/img/card_bgs/gold-silver-bronze-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Customer Segmentation Analysis</h5>
+            <p class="card-text">An exercise in dividing customers into groups based on financial impact whereby
+              additional services could be rendered or withheld based on financial benefit.</p>
+            <p class="card-link"><a href="/projects/customerSegmentation.html" target="_blank">RMD</a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">R, RMD, Plotly, Segmentation Analysis</small>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 shadow-sm p-2">
-            <img src="/img/card_bgs/molten-metal-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Foundry Data Cleaning</h5>
-              <p class="card-text">A somewhat tedious cleaning task on data, dating back to 1995, relating to data
-                collected in a small foundry setting.</p>
-              <p class="card-link"><a href="/projects/historicalMAL.html" target="_blank">RMD</a></p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">R, RMD, Data Cleaning</small>
-            </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm p-2">
+          <img src="/img/card_bgs/molten-metal-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Foundry Data Cleaning</h5>
+            <p class="card-text">A somewhat tedious cleaning task on data, dating back to 1995, relating to data
+              collected in a small foundry setting.</p>
+            <p class="card-link"><a href="/projects/historicalMAL.html" target="_blank">RMD</a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">R, RMD, Data Cleaning</small>
           </div>
         </div>
+      </div>
 
-        <div class="col">
-          <div class="card h-100 shadow-sm p-2">
-            <img src="/img/card_bgs/macarons-on-display-at-bakery-2.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Bakery Transaction Analysis</h5>
-              <p class="card-text">A primarily exploratory data analysis on nearly 6 months of bakery sales data with
-                ultimate suggestions to increase revenue. </p>
-              <p class="card-link"><a href="/projects/bakerySales.html" target="_blank">RMD</a></p>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">R, RMD, ggPlot, EDA, Market Basket Analysis</small>
-            </div>
+      <div class="col">
+        <div class="card h-100 shadow-sm p-2">
+          <img src="/img/card_bgs/macarons-on-display-at-bakery-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Bakery Transaction Analysis</h5>
+            <p class="card-text">A primarily exploratory data analysis on nearly 6 months of bakery sales data with
+              ultimate suggestions to increase revenue. </p>
+            <p class="card-link"><a href="/projects/bakerySales.html" target="_blank">RMD</a></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">R, RMD, ggPlot, EDA, Market Basket Analysis</small>
           </div>
         </div>
-
       </div>
 
     </div>
-
   </div>
   <!-- /PROJECTS -->
 
