@@ -10106,6 +10106,135 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: normal;
+}
+
+h1, h3, h4, h5, h6 {
+  font-family: "Arvo", serif;
+  font-family: "Oswald", sans-serif;
+  font-weight: normal;
+  animation: type 4s steps(60, end);
+}
+h1 mark, h3 mark, h4 mark, h5 mark, h6 mark {
+  background-color: pink;
+  line-height: 15rem;
+  margin: 1rem 1rem 2rem 0;
+}
+
+h2 {
+  font-family: "Oswald", sans-serif;
+}
+
+#fade1 {
+  -webkit-animation: fadein 15s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 15s; /* Firefox < 16 */
+  -ms-animation: fadein 15s; /* Internet Explorer */
+  -o-animation: fadein 15s; /* Opera < 12.1 */
+  animation: fadein 15s;
+}
+
+#fade2 {
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s; /* Firefox < 16 */
+  -ms-animation: fadein 5s; /* Internet Explorer */
+  -o-animation: fadein 5s; /* Opera < 12.1 */
+  animation: fadein 5s;
+}
+
+#fade3 {
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 4s; /* Firefox < 16 */
+  -ms-animation: fadein 4s; /* Internet Explorer */
+  -o-animation: fadein 4s; /* Opera < 12.1 */
+  animation: fadein 4s;
+}
+
+#fade4 {
+  -webkit-animation: fadein 5s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 5s; /* Firefox < 16 */
+  -ms-animation: fadein 5s; /* Internet Explorer */
+  -o-animation: fadein 5s; /* Opera < 12.1 */
+  animation: fadein 5s;
+}
+
+#fade5 {
+  -webkit-animation: fadein 6s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 6s; /* Firefox < 16 */
+  -ms-animation: fadein 6s; /* Internet Explorer */
+  -o-animation: fadein 6s; /* Opera < 12.1 */
+  animation: fadein 6s;
+}
+
+#fade6 {
+  -webkit-animation: fadein 7s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 7s; /* Firefox < 16 */
+  -ms-animation: fadein 7s; /* Internet Explorer */
+  -o-animation: fadein 7s; /* Opera < 12.1 */
+  animation: fadein 7s;
+}
+
+#fade7 {
+  -webkit-animation: fadein 8s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 8s; /* Firefox < 16 */
+  -ms-animation: fadein 8s; /* Internet Explorer */
+  -o-animation: fadein 8s; /* Opera < 12.1 */
+  animation: fadein 8s;
+}
+
+#fade9 {
+  -webkit-animation: fadein 9s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 9s; /* Firefox < 16 */
+  -ms-animation: fadein 9s; /* Internet Explorer */
+  -o-animation: fadein 9s; /* Opera < 12.1 */
+  animation: fadein 9s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .navbar {
   padding: 2px 15px 0px 15px;
   background: linear-gradient(to top, #EAECEF, #FFFFFF);
@@ -10118,18 +10247,12 @@ textarea.form-control-lg {
   transition: all ease-in 150ms;
   scale: 1.02;
 }
-.navbar-collapse {
-  padding: 0 73px 0 0;
-}
 .navbar ul {
   margin: auto;
 }
 .navbar ul li {
   padding: 0 0.7rem;
   padding-top: 2px;
-}
-.navbar ul li.nav-item {
-  justify-content: right;
 }
 .navbar ul li a.nav-link {
   font-family: "Open Sans", sans-serif;
@@ -10151,12 +10274,15 @@ textarea.form-control-lg {
 
 #section_About {
   height: auto;
-  padding-top: 4rem;
+  padding: 4rem 2rem 0 2rem;
   min-height: 100vh;
   width: 100vw;
   height: 100vh;
   background-size: cover;
   background-color: #EAECEF;
+  background-image: linear-gradient(to bottom, hsla(0deg, 0%, 5%, 0.8), hsla(45deg, 0%, 64%, 0.6)), url(/img/self3.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #section_About .row {
   padding-bottom: 1rem;
@@ -10164,20 +10290,16 @@ textarea.form-control-lg {
 #section_About .d-inline {
   padding-left: 1rem;
 }
-
-#headshot {
-  max-width: 500px;
-  height: 500px;
-  object-fit: cover;
-  margin: 10px;
-  border: 10px solid hsl(28deg, 35%, 61%);
-  border: 10px solid #FFFFFF;
-  border-radius: 500px;
-  -webkit-border-radius: 500px;
-  -moz-border-radius: 500px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+#section_About .blendedText {
+  color: #FFFFFF;
+  mix-blend-mode: difference;
+  filter: drop-shadow(0.05em 0.05em orange);
+}
+#section_About .bioLocation {
+  margin: 1rem 0 2rem 0;
+}
+#section_About .bioInfo {
+  margin: 0 3rem 0 2rem;
 }
 
 #section_Projects {
@@ -10203,6 +10325,11 @@ textarea.form-control-lg {
 #section_Footer i:hover {
   transition: all ease-in-out 150ms;
   margin-top: -2px;
+}
+#section_Footer .blendedFooter {
+  color: #FFFFFF;
+  mix-blend-mode: hue;
+  filter: drop-shadow(0.05em 0.05em #EAECEF);
 }
 
 /*# sourceMappingURL=style.css.map */

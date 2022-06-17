@@ -1,38 +1,28 @@
 @use '../custom' as *;
 
 .navbar {
-  padding: 2px 15px 0px 15px;
-  // background-color: $Graphic-Design-3-hsla;
-  // background: linear-gradient(to right, white, $Graphic-Design-30-hsla);
+  padding: 2px 15px 0px 15px;                                       // scrunch navbar a bit
   background: linear-gradient(to top, $Roadside-4, $Roadside-3);
   border-bottom: 1px solid $Roadside-2;
-  // background-color: white;
   
   &-brand {
     margin: -6px 0 0 10px;
     &:hover{
       transition: all ease-in 150ms;
       scale: 1.02;
-      // margin-top: -1px;
     }
   }
 
-
   &-collapse{
-      // margin: -6px 0 0 10px;
-      padding: 0 $navbar-brand-width 0 0;
+      // padding: 0 $navbar-brand-width 0 0;
     }
 
   ul {
-    margin: auto;
+    margin: auto; // center nav items
     
     li {
       padding: 0 0.7rem;
       padding-top: 2px;
-      
-      &.nav-item{
-        justify-content: right;
-      }
       
       a {
         &.nav-link {
@@ -40,7 +30,6 @@
           text-transform: lowercase;
           transition: margin ease-in 150ms;
           color: $Graphic-Design-1-hsla;
-          // margin-top: 5px;
         }
         
         &:hover {
@@ -61,3 +50,6 @@
     }
   }
 }
+
+$navbar-light-toggler-icon-bg:      url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='#{$navbar-light-color}' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>") !default;
+

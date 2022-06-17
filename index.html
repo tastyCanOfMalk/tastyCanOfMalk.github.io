@@ -11,6 +11,9 @@
   <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
   <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
   <!-- <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Oswald&display=swap" rel="stylesheet"> -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arvo:ital@0;1&family=Oswald&display=swap" rel="stylesheet">
   <!-- /GOOGLE FONTS -->
 
   <title>Edward Yu</title>
@@ -49,34 +52,36 @@
   <!--/NAVBAR-->
 
   <!-- ABOUT -->
-  <!-- TODO: Vertical align all sub-containers in About section-->
+  <!-- TODO: Fade-in text effect on HELLO -or- Typewriter animation -->
   <div class="container-fluid" id=section_About>
 
-    <div class="container">
-
-      <div class="row">
-
-        <div class="col">
-          <i class="fa-solid fa-location-dot fa-2x"></i>
-          <h2 class="d-inline">Columbus, Ohio</h2>
-        </div>
-
+    <div class="row">
+      <div class="bioLocation col blendedText">
+        <i class="fa-solid fa-location-dot fa-2x"></i>
+        <h2 class="d-inline">Columbus, Ohio</h2>
       </div>
+    </div>
 
-      <div class="row">
-        <div class="col">
-          <!-- TODO: Typography -->
-          <h1>Hi, I'm <mark>Edward Yu</mark>.</h1>
-          <h1>I'm a Data Analytics and Machine Learning enthusiast with Full Stack Software Development experience.
-            Currently pursuing a Masters in Data Analytics from Georgia Tech.
+    <div class="row">
+
+      <div class="col blendedText bioInfo">
+
+        <h1 class="display-3">Hello, I'm <mark>Edward Yu</mark>.</h1>
+
+
+        <h2 class="">I'm a
+          <u>Data Analytics</u>
+          and
+          <u>Machine Learning</u>
+          enthusiast with
+          <u>Full Stack Software Development</u>
+          experience, currently pursuing a
+          <b>Masters in Data Analytics</b> from Georgia Tech.
           </h1>
-          <h1>I <i>love</i> a good data visualization.</h1>
-        </div>
+          <h1 class="test">I
+            <i>love</i>
+            a good data visualization.</h1>
 
-        <!-- TODO: Add BS5 Carousel of interesting pictures to convey personality?-->
-        <div class="col">
-          <img src="/img/self2.jpg" alt="A picture of myself at Dismaland" id="headshot">
-        </div>
 
       </div>
 
@@ -241,7 +246,7 @@
   <!-- FOOTER -->
   <footer class="container-fluid fixed-bottom" id="section_Footer">
 
-    <div class="d-flex justify-content-end">
+    <div class="d-flex justify-content-end blendedFooter">
 
       <a href="https://www.linkedin.com/in/yuedward4/" target="_blank">
         <i class="fa-brands fa-linkedin-in fa-2x"></i>

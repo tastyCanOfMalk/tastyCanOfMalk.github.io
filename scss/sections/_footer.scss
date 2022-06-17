@@ -17,4 +17,13 @@
     transition: all ease-in-out 150ms;
     margin-top: -2px;
   }
+
+.blendedFooter {
+  color: $Roadside-3;
+  mix-blend-mode: hue;
+  filter: drop-shadow(0.05em 0.05em $Roadside-4);
+
+}
+
+
 }

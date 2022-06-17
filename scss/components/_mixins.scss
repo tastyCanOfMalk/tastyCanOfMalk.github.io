@@ -1,0 +1,10 @@
+@use '../custom' as *;
+
+
+@function text-clr($color) {
+  @if (lightness($color) > 50) {
+    @return $Roadside-1;
+  } @else {
+    @return $Roadside-3;
+  }
+}

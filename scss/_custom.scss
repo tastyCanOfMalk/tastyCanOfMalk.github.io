@@ -1,8 +1,3 @@
-// html, body{
-//     height:auto;
-//     min-height: 100vh;
-// }
-
 // THEME COLORS
 
 $Roadside-1: #3E4147;
@@ -28,25 +23,13 @@ $Graphic-Design-5-rgba: rgba(12, 12, 12, 1);
 $Graphic-Design-1-hsla: hsla(45, 0, 64, 1);
 $Graphic-Design-2-hsla: hsla(28, 35, 61, 1);
 $Graphic-Design-3-hsla: hsla(0, 0, 95, 1);
-$Graphic-Design-30-hsla: hsla(0, 0, 98, 1);
 $Graphic-Design-4-hsla: hsla(0, 0, 15, 1);
 $Graphic-Design-5-hsla: hsla(0, 0, 5, 1);
 
-
-// $purple-dark: #9926f0;
-// $purple-light: #bb6ef5;
-// $pink: #d122e3;
-// $footer: #151414;
-
-// $primary: rgb(252, 252, 252);
-// $primary: blue;
-// $secondary: red;
-
-// ACCORDION OVERRIDE
-// $accordion-icon-color: $primary;
-// $accordion-icon-active-color: $secondary;
-// $accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' d='M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z'/></svg>");
-// $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$accordion-icon-active-color}'><path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/></svg>");
+  // Transparent versions
+$Graphic-Design-10-hsla: hsla(45, 0, 64, 0.6);
+$Graphic-Design-30-hsla: hsla(0, 0, 98, 1);
+$Graphic-Design-50-hsla: hsla(0, 0, 5, .8);
 
 // NAVBAR
 $navbar-brand-width: 73px;
