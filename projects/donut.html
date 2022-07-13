@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- GOOGLE ANALYTICS -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PRR9VZC1F8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'G-PRR9VZC1F8');
+  </script>
+  <!-- /GOOGLE ANALYTICS -->
+  <!-- Google Tag Manager -->
+  <script>
+    (function (w, d, s, l, i) {
+      w[l] = w[l] || [];
+      w[l].push({
+        'gtm.start': new Date().getTime(),
+        event: 'gtm.js'
+      });
+      var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s),
+        dl = l != 'dataLayer' ? '&l=' + l : '';
+      j.async = true;
+      j.src =
+        'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+      f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WQJCGBB');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="/dist/css/donut.css">
+  <title>Donut Clicker</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="donutBrand" src="/img/donut1.png" alt="" width="35">
+          <!-- https://www.flaticon.com/free-icon/donut_3125192# -->
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Fred the Baker Baking Company
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <!-- <li><a class="dropdown-item" href="#">Fred the Baker Baking Company</a></li> -->
+                <li><a class="dropdown-item" href="https://orteil.dashnet.org/cookieclicker/">Inspiration</a></li>
+                <li><a class="dropdown-item" href="mailto:hello@ed-yu.com">Contact me</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+    <div class="container mt-lg-4">
+
+      <div class="row">
+
+        <div class="col p-3">
+          <h1 id="title">Donut clicker</h1>
+          <h2 id="numClicks">Score: <span id="score">0</span></h2>
+          <img class="shake m-2" id="donut" src="/img/donut2.png" onclick="updateScore(donutClickerMultiplier)">
+        </div>
+
+        <div class="col">
+          <div class="row">
+            <div class="col-6-lg offset-md-1 p-3">
+              <h1>Autoclicker</h1>
+              <p id="autoclickersPurchased">Clicks applied per second: <span id="autoclickersPurchasedCount">0</span>
+              </p>
+              <button type="button" class="btn btn-warning disabled" id="autoclickerButton">Cost: <span
+                  id="autoclickerButtonCost">100</span></button>
+            </div>
+
+            <!-- <div class="width-100"></div> -->
+
+            <div class="col-6-lg offset-md-1 p-3">
+              <h1>Click multiplier</h1>
+              <p id="multipliersPurchased">Current multiplier: <span id="multipliersPurchasedCount">1</span></p>
+              <button type="button" class="btn btn-warning disabled" id="multiplierButton">Cost: <span
+                  id="multiplierButtonCost">100</span></button>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-6-lg p-3" id="resetButton">
+          <button type="button" class="btn btn-danger" onclick="resetAll()">Reset!</button>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="/node_modules/@popperjs/core/dist/esm/popper.js"></script>
+    <script src="/js/donut.js"></script>
+</body>
+
+</html>
